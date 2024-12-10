@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <div class="input-box">
+            <input type="text" id="login" placeholder="Login:" required>
+        </div>
+        <div class="input-box">
+            <input type="email" id="email" placeholder="Email:" required>
+        </div>
+        <div class="input-box">
+            <input type="password" id="senha" placeholder="Senha:" required minlength="6">
+        </div>
+        <div class="input-box">
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone:" required>
+        </div>
+        <div class="input-box">
+            <input type="text" id="cep" placeholder="Digite o CEP (ex: 01001000)" required />
+        </div>
+        <div class="input-box">
+            <input type="text" id="endereco" placeholder="Endereço:" readonly />
+        </div>
+        <div class="input-box">
+            <input type="text" id="bairro" placeholder="Bairro:" readonly />
+        </div>
+        <div class="input-box">
+            <input type="text" id="cidade" placeholder="Cidade:" readonly />
+        </div>
+        
+        <div id="mensagem"></div>
+        <div class="loading" id="loading">Buscando...</div>
+        <button class="btn-cadastrar" onclick="cadastrar()">Cadastrar</button>
+    </div>
+</body>
+</html>
